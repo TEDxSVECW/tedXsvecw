@@ -23,7 +23,13 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
           <!-- Logo -->
-          <a class="navbar-brand" href="#">tedXsvecw</a>
+          <a class="navbar-brand" href="#">
+            <img
+                src="images/tedXsvecw_heading.png"
+                alt="tedXsvecw heading"
+                class="tedXsvecw-heading-logo"
+              />
+          </a>
           <!-- Hamburger Icon -->
           <button
             class="navbar-toggler"
@@ -46,14 +52,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="#gallery">Gallery</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#sponsors">Sponsors</a>
-              </li>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="#events">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Teams</a>
+                <a class="nav-link" href="team.html">Team</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#locations">Locations</a>
@@ -80,19 +83,31 @@
           <div class="col-lg-5 col-md-6 col-12 d-flex align-items-center">
             <div class="details-div">
               <p class="heading1">Happening On...</p>
+              
               <div class="date-container">
                 <img
                   src="images/calender_image.png"
                   alt="calendar image"
                   class="calendar-container"
                 />
-                <p class="time-container">dd/mm/yyyy</p>
+                <p class="time-container" id="currentDate"></p>
               </div>
-              <img
-                src="images/tedXsvecw_heading.png"
-                alt="tedXsvecw heading"
-                class="tedXsvecw-heading-logo"
-              />
+              <script>
+                // Get the current date
+                const today = new Date();
+              
+                // Format the date as dd/mm/yyyy
+                const formattedDate = today.toLocaleDateString('en-GB', {
+                  day: '2-digit',
+                  month: '2-digit',
+                  year: 'numeric',
+                });
+              
+                // Set the formatted date in the .time-container
+                document.getElementById('currentDate').textContent = formattedDate;
+              </script>
+
+
             </div>
           </div>
         </div>
@@ -148,9 +163,7 @@
               </div>
               <div class="col-12 col-md-7 speaker-info">
                 <div class="speaker-name">Anurag Mittal</div>
-                  <div class="speaker-description"> 
-     	                Mr. Anurag Mittal is the CEO and Co-founder of Olao Books, a startup aiming to transform accounting and payroll software for small and medium-sized businesses. With leadership roles at Deloitte, JP Morgan, and Icertis, he brings a unique mix of sales, marketing, and operational expertise. Anurag's journey from marketing leader to finance and accounting entrepreneur showcases his versatility and vision. He is dedicated to changing how businesses handle their financial processes, ensuring they have the tools and insights to thrive in a competitive world.
-                  </div>
+                <div class="speaker-description">Anurag Mittal's information</div>
               </div>
             </div>
           </div>
@@ -163,7 +176,11 @@
               <div class="col-12 col-md-7  speaker-info">
                 <div class="speaker-name">Pooja Vegnesa</div>
                 <div class="speaker-description">
-                  Ms. Pooja Vegesna is a dedicated mental health counselor passionate about promoting slow living and mindfulness. As a social influencer, she shares insights on mental wellness and self-care, encouraging her followers to embrace a more intentional lifestyle. An avid yoga practitioner, Pooja integrates the principles of yoga into her counseling approach, helping individuals find balance and peace. She enjoys reading and sharing knowledge, striving to empower others on their journeys to mental well-being.
+                  Studied at Illinois Institute of Technology Chicago - Illinois Tech
+                  Studied at Shri Vishnu Engineering College for Women
+                  Studied at Fahaheel Al-Watanieh Indian Private School, Kuwait.
+                  Studied at Kendriya Vidyalaya ONGC Chandkheda, Ahmedabad
+                  Lives in Visakhapatnam, Andhra Pradesh, India
                 </div>
               </div>
             </div>
@@ -176,46 +193,9 @@
               <div class="col-12 col-md-7 speaker-info">
                 <div class="speaker-name">Anuvamshi Shetty</div>
                 <div class="speaker-description">
-      Ms. Anuvamshi Shetty began her career in investment banking, gaining valuable insights into finance's intricacies. However, a pivotal realization soon reshaped her goals, and many talented women faced significant obstacles in achieving financial independence. This awareness inspired her to pursue a higher purpose, empowering women nationwide to build businesses, gain financial freedom, and overcome societal barriers. Today, she leads a platform dedicated to providing guidance and financial support to female entrepreneurs, helping them forge their paths to success. Anuvamshi’s efforts have garnered recognition, including acknowledgment from MIT Boston’s Deshpande Startups, underscoring her belief that even the smallest actions can spark meaningful change. Beyond her entrepreneurial ventures, she embraces a creative and multifaceted life, exploring roles as a model, a musician passionate about the guitar, and a financial educator through her YouTube channel. Through this platform, she simplifies finance, making it more accessible and actionable for people from diverse backgrounds.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="speaker-div row align-items-center">
-              <div class="col-12 col-md-5 speaker-image-div">
-                <img src="images/Speakers_Images/Dr_Nikhil_Varma.jpeg" class="img-fluid" alt="Dr.Nikhil Varma">
-              </div>
-              <div class="col-12 col-md-7 speaker-info">
-                <div class="speaker-name">Dr. Nikhil Varma</div>
-                <div class="speaker-description">
-Dr. Nikhil Varma is an Associate Professor at Ramapo College in New Jersey and Technology Lead for the Algorand Foundation in India. Specializing in Operations and Supply Chain, Blockchain, and Sustainability, he has over 20 years of experience in bridging the gap between technology and business. Nikhil also serves as the Chair of the Blockchain Workgroup at the Center of Excellence at "The Digital Economist," where he leads initiatives at the forefront of blockchain technology and digital economics.
-                </div>
-              </div>
-            </div>
-          </div>
-           <div class="carousel-item">
-            <div class="speaker-div row align-items-center">
-              <div class="col-12 col-md-5 speaker-image-div">
-                <img src="images/Speakers_Images/Sunny_Bhatia.jpeg" class="img-fluid" alt="Mr. Sunny Bhatia">
-              </div>
-              <div class="col-12 col-md-7 speaker-info">
-                <div class="speaker-name">Mr. Sunny Bhatia</div>
-                <div class="speaker-description">
-Mr. Sunny Bhatia is a visionary entrepreneur who has built Ash Amaira into one of India’s premier luxury brands, with a global presence, including being the first Indian luxury label to launch in Saudi Arabia. Featured on CNBC Young Turks and honored with the CNBC and Lufthansa Upcoming Retailer Award, his journey is a testament to resilience and the ability to turn challenges into opportunities. Beyond business, Sunny is a passionate storyteller, sharing valuable insights on life, philosophy, and management, inspiring millions through his remarkable journey.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="speaker-div row align-items-center">
-              <div class="col-12 col-md-5 speaker-image-div">
-                <img src="images/Speakers_Images/Nancy_Dhiman.jpg" class="img-fluid" alt="Dr. Nancy Dhiman">
-              </div>
-              <div class="col-12 col-md-7 speaker-info">
-                <div class="speaker-name">Dr. Nancy Dhiman</div>
-                <div class="speaker-description">
-Dr. Nancy Dhiman is an internationally certified Strategic Implantologist with extensive experience in Immediate Functional Loading of Implants. Renowned for clinical mastery and surgical precision, with over 20,000 successful bicortical implant placements. A dedicated leader and mentor in advanced implantology, Dr. Dhiman is committed to delivering excellence in patient outcomes, fostering innovation, and advancing the field through teaching and knowledge-sharing. Her training spans prestigious programs in Germany, South Korea, and beyond, focusing on advanced grafting, sinus lift, and prosthetic implant procedures.
+                  Having begun my journey as a Research Associate and climbing up to a Senior Research role at Morningstar, I've always been driven by an insatiable curiosity and a knack for financial analysis. My experience expanded into the high-stakes world of investment banking as an Analyst at a boutique firm, where I honed my skills in strategic financial solutions and client-focused advisory.
+                  Today, I'm channeling my passion for finance into my most ambitious venture yet – my own startup which is AccelRevenue. Entrepreneurship in the financial sector isn't just a career choice for me; it's a calling. I'm on a mission to leverage my insights, experience, and passion to innovate and create value in the realm of finance.<br>
+                  🔗Open to collaborations, partnerships, and brainstorming sessions. Let's shape the future of finance together!
                 </div>
               </div>
             </div>
@@ -241,35 +221,35 @@ Dr. Nancy Dhiman is an internationally certified Strategic Implantologist with e
     <div class="gallery-section-title"><h1>Gallery</h1></div>
     <div class="gallery-grid">
       <div class="gallery-image">
-        <img src="images/Gallery_Images/gallery1.jpg" alt="Event Image" />
+        <img src="images/gallery_images/gallery1.jpg" alt="Event Image" />
       </div>
       <div class="gallery-image">
-        <img src="images/Gallery_Images/gallery2.jpg" alt="Event Image" />
+        <img src="images/gallery_images/gallery2.jpg" alt="Event Image" />
       </div>
       <div class="gallery-image">
-        <img src="images/Gallery_Images/gallery3.jpg" alt="Event Image" />
+        <img src="images/gallery_images/gallery3.jpg" alt="Event Image" />
       </div>
       <div class="gallery-image">
         <img src="images/Gallery_Images/gallery4.jpg" alt="Event Image" />
       </div>
       <div class="gallery-image">
-        <img src="images/Gallery_Images/gallery5.jpg" alt="Event Image" />
+        <img src="images/gallery_images/gallery5.jpg" alt="Event Image" />
       </div>
       <div class="gallery-image">
-        <img src="images/Gallery_Images/gallery6.jpg" alt="Event Image" />
+        <img src="images/gallery_images/gallery6.jpg" alt="Event Image" />
       </div>
       <div class="gallery-image">
-        <img src="images/Gallery_Images/gallery7.jpg" alt="Event Image" />
+        <img src="images/gallery_images/gallery7.jpg" alt="Event Image" />
       </div>
       <div class="gallery-image">
-        <img src="images/Gallery_Images/gallery8.jpg" alt="Event Image" />
+        <img src="images/gallery_images/gallery8.jpg" alt="Event Image" />
       </div>
       </div>
     </div>
     </section>
 
     <!-- Sponsors Section -->
-    <section id="sponsors">
+    <!-- <section id="sponsors">
       <div class="sponsors-section-title"><h1>Sponsors</h1></div>
       <div class="sponsor-carousel">
           <div class="sponsor-track">
@@ -283,7 +263,7 @@ Dr. Nancy Dhiman is an internationally certified Strategic Implantologist with e
               <img src="images/Sponsors_Images/sponser4.jpeg" alt="Sponsor Logo" class="sponsor-logo">
           </div>
       </div>
-    </section>
+    </section> -->
         <!-- Location & Contact Details Section with Map -->
     <section id="locations">
       <div class="container my-4">
@@ -304,9 +284,8 @@ Dr. Nancy Dhiman is an internationally certified Strategic Implantologist with e
           <div class="contact-container" id="contact">
             <div class="contact-title">Contact Us</div>
             <div class="inner-contact-container">
-              <p>Contact us for more information:</p>
               <p><strong>Email:</strong> example@email.com</p>
-              <p><strong>Phone:</strong> 8106297438(Sreekari, Organizer)<br>& 8309838365(Rukmini, Co-Organiser)</p>
+              <p><strong>Phone:</strong> 8106297438</p>
               <p><strong>Address:</strong> Bhimavaram, Andhra Pradesh, India</p>
             </div>
           </div>

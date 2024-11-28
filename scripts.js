@@ -1,5 +1,5 @@
 // Countdown timer script
-const countDownDate = new Date("Nov 30, 2024 00:00:00").getTime();
+const countDownDate = new Date("Dec 14, 2024 00:00:00").getTime();
 
 const timer = setInterval(function() {
     let now = new Date().getTime();
