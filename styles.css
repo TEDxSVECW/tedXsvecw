@@ -519,6 +519,11 @@ body {
   margin-top: 5px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.speaker-designation{
+  font-size : 0.46em;
+  color : black;
+  font-weight: 300;
+}
 
 /* Responsive styling */
 @media (max-width: 768px) {
