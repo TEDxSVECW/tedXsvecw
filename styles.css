@@ -45,6 +45,17 @@ body {
     
 }
 
+@media (max-width: 992px) {
+    .navbar .navbar-brand img {
+        max-height: 40px; /* Reduce logo size on smaller screens */
+    }
+    .navbar {
+        padding: 0 15px; /* Reduce horizontal padding for compact layout */
+    }
+    .navbar-toggler {
+        margin-left: auto; /* Keep toggler aligned to the right */
+    }
+}
 /* Intro Secton */
 .grid-container{
     /* border: #d21b25 solid; */
@@ -97,6 +108,7 @@ body {
     box-sizing: border-box;
     border-radius: 10px;
     overflow: hidden;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 /* Moving border effect */
@@ -134,7 +146,7 @@ body {
 
 .heading1{
     color: #fff;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.5rem; /* Default for smaller screens */
 }
 
@@ -162,6 +174,10 @@ body {
     justify-content: center;
 }
 
+.date-container h1{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
 .calendar-container {
     width: 20%; /* Limit image size */
     height: auto;

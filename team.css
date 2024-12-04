@@ -71,9 +71,20 @@ body {
 }
 
 /* Container for the entire team section */
+/* 
+.team-container {
+  padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+} */
 .team-wise-container {
   padding: 20px;
   background-color: #000;
+  align-items: center;
+  justify-content: center;
   color: #fff;
 }
 
